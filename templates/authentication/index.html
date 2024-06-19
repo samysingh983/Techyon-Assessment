@@ -51,7 +51,7 @@
 
     
     {% if user.is_authenticated %}
-    <center><h3>Hello {{ username }}! Welcome to techyon!</h3></center> 
+    {% include "authentication/about.html" %}
     {% else %}
     <center><h3>Welcome to techyon!</h3></center>
     {% endif %}
