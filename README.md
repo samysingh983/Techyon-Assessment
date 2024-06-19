@@ -1,5 +1,6 @@
 # Techyon-Assessment
-This Django project allows users to register with their email addresses and verifies their email through a confirmation link sent via email.
+Assignment Needed to be completed as below:
+the assignment is to develop an authorization module. This consists of three parts mainly - signup page, login page and about page. This can be normally seen across the websites like Zomato, Flipkart, Makemytrip to name a few.
 
 ## Features
 
