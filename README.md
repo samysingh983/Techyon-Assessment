@@ -23,7 +23,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```
-    https://github.com/samysingh983/Techyon-Assessment/
+    [https://github.com/samysingh983/Techyon-Assessment/](https://github.com/samysingh983/Techyon-Assessment.git)
    ```
 
 2. Create a virtual environment and activate it:
