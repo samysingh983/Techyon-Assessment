@@ -144,6 +144,8 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+# to ignore file
+info.py  
 
 # Pyre type checker
 .pyre/
