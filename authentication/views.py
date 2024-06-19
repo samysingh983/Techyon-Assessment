@@ -19,6 +19,7 @@ def signup(request):
         fname = request.POST["fname"]
         lname = request.POST["lname"]
         email = request.POST["email"]
+        mobile = request.POST["mobile"]
         pass1 = request.POST["pass1"]
         pass2 = request.POST["pass2"]
 
@@ -42,9 +43,14 @@ def signup(request):
             messages.error(request, "Username must be Alpha-Numeric!!")
             return redirect('signup')
         
+        if not mobile.isnumeric():
+            messages.error(request, "Mobile Number must be Numeric!!")
+            return redirect('signup')
+        
         myuser = User.objects.create_user(username, email, pass1)
         myuser.fname = fname
         myuser.lname = lname
+        myuser.mobile = mobile
         myuser.email_verification = False
         myuser.is_active = False
         myuser.save()
